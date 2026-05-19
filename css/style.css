@@ -751,7 +751,7 @@ section { padding: var(--sp-16) 0; }
   margin: 0;
 }
 .ps-step.active .ps-step-desc {
-  max-height: 80px;
+  max-height: 200px;
   opacity: 1;
 }
 
@@ -761,12 +761,15 @@ section { padding: var(--sp-16) 0; }
   border: 1px solid var(--gray-100);
   border-radius: var(--radius-xl);
   min-height: 340px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding: var(--sp-8);
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .ps-visual-panel { display: flex; }
 }
 @media (min-width: 900px) {
   .ps-visual-panel {
