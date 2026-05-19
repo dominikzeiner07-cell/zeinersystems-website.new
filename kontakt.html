@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Zeiner Systems</title>
+  <meta name="description" content="Nehmen Sie Kontakt zu Zeiner Systems auf. Wir beraten Sie gerne zu Ihrem Website-Chatbot." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Zeiner<span>.</span></a>
+        <div class="nav-links">
+          <a href="index.html">Start</a>
+          <a href="leistungen.html">Leistungen</a>
+          <a href="funktionsweise.html">Funktionsweise</a>
+          <a href="angebote.html">Angebote</a>
+          <a href="kontakt.html" class="active">Kontakt</a>
+        </div>
+        <div class="nav-cta">
+          <a href="angebote.html" class="btn btn-outline btn-sm">Pakete ansehen</a>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Kontakt aufnehmen</a>
+        </div>
+        <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Start</a>
+    <a href="leistungen.html">Leistungen & Ablauf</a>
+    <a href="funktionsweise.html">Funktionsweise</a>
+    <a href="angebote.html">Angebote</a>
+    <a href="kontakt.html">Kontakt</a>
+    <div class="mobile-menu-cta">
+      <a href="angebote.html" class="btn btn-outline btn-full">Pakete ansehen</a>
+      <a href="kontakt.html" class="btn btn-primary btn-full">Kontakt aufnehmen</a>
+    </div>
+  </div>
+
+  <main>
+
+    <section style="padding: var(--sp-16) 0 var(--sp-20); background: var(--white);">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Left: Info -->
+          <div class="contact-info">
+            <div class="section-label">Kontakt</div>
+            <h2>Sprechen wir über Ihren Chatbot.</h2>
+            <p>Stellen Sie eine Anfrage – wir melden uns innerhalb von einem Werktag bei Ihnen und besprechen gemeinsam, was für Ihr Unternehmen passt.</p>
+
+            <div style="margin-top: var(--sp-8);">
+              <a href="mailto:office@zeinersystems.at" class="contact-method">
+                <div class="contact-method-icon">✉️</div>
+                <div class="contact-method-text">
+                  <span>E-Mail</span>
+                  <strong>office@zeinersystems.at</strong>
+                </div>
+              </a>
+            </div>
+
+            <!-- Was passiert nach der Anfrage -->
+            <div style="margin-top: var(--sp-8); padding: var(--sp-5); background: var(--off-white); border: 1px solid var(--gray-100); border-radius: var(--radius-md);">
+              <h3 style="font-size: 0.9rem; font-weight: 700; margin-bottom: var(--sp-4); color: var(--black);">Was passiert nach Ihrer Anfrage?</h3>
+              <ul style="display: flex; flex-direction: column; gap: var(--sp-3);">
+                <li style="display: flex; gap: var(--sp-3); font-size: 0.875rem; color: var(--gray-600);">
+                  <span style="width: 22px; height: 22px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 0.7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">1</span>
+                  Wir melden uns innerhalb eines Werktags bei Ihnen.
+                </li>
+                <li style="display: flex; gap: var(--sp-3); font-size: 0.875rem; color: var(--gray-600);">
+                  <span style="width: 22px; height: 22px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 0.7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">2</span>
+                  Kurzes Gespräch – wir klären Ziele und passendes Paket.
+                </li>
+                <li style="display: flex; gap: var(--sp-3); font-size: 0.875rem; color: var(--gray-600);">
+                  <span style="width: 22px; height: 22px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 0.7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">3</span>
+                  Einrichtung beginnt – Sie müssen sich um nichts kümmern.
+                </li>
+              </ul>
+            </div>
+
+            <div style="margin-top: var(--sp-6);">
+              <p style="font-size: 0.825rem; color: var(--gray-400);">
+                <span style="background: rgba(34,197,94,.1); color: #16a34a; padding: 3px 10px; border-radius: 99px; font-size: 0.78rem; font-weight: 600;">✓ Erster Monat gratis</span>&nbsp;
+                <span style="background: rgba(34,197,94,.1); color: #16a34a; padding: 3px 10px; border-radius: 99px; font-size: 0.78rem; font-weight: 600;">✓ Einrichtung inklusive</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="contact-form-card">
+
+            <form id="contactForm" action="https://formspree.io/f/xredbkvr" method="POST" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name <span class="required" style="color: var(--accent-from);">*</span></label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Max Mustermann" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="company">Unternehmen <span class="optional">(optional)</span></label>
+                  <input type="text" id="company" name="company" class="form-input" placeholder="Muster GmbH" autocomplete="organization" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">E-Mail <span class="required" style="color: var(--accent-from);">*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="max@beispiel.de" required autocomplete="email" />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Telefon <span class="optional">(optional)</span></label>
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="+43 123 456789" autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="website">Website-URL <span class="required" style="color: var(--accent-from);">*</span></label>
+                <input type="url" id="website" name="website" class="form-input" placeholder="https://ihre-website.de" required autocomplete="url" />
+              </div>
+
+              <div class="form-group">
+                <label for="package">Interesse / Paket</label>
+                <select id="package" name="package" class="form-select">
+                  <option value="" disabled selected>Bitte wählen …</option>
+                  <option value="standard">Standard – 29 € / Monat</option>
+                  <option value="pro">Pro – 49 € / Monat</option>
+                  <option value="unsure">Noch unsicher – bitte beraten</option>
+                  <option value="question">Ich habe nur eine Frage</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Nachricht <span class="optional">(optional)</span></label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Was möchten Sie uns mitteilen? Was soll der Chatbot können?"></textarea>
+              </div>
+
+              <div class="form-group" style="margin-bottom: var(--sp-6);">
+                <label class="form-checkbox">
+                  <input type="checkbox" name="privacy" required />
+                  <span>Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. <span style="color: var(--accent-from);">*</span></span>
+                </label>
+              </div>
+
+              <!-- Honeypot – wird von echten Nutzern nicht ausgefüllt -->
+              <input type="text" name="_gotcha" tabindex="-1" style="display:none" />
+
+              <button type="submit" class="btn btn-primary btn-full btn-lg">
+                Anfrage absenden
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <p style="font-size: 0.78rem; color: var(--gray-400); text-align: center; margin-top: var(--sp-4);">
+                Mit * markierte Felder sind Pflichtfelder.
+              </p>
+
+            </form>
+
+            <!-- Success State -->
+            <div class="form-success" id="formSuccess">
+              <div class="form-success-icon">✅</div>
+              <h3>Anfrage erhalten!</h3>
+              <p style="color: var(--gray-600); font-size: 0.95rem;">Vielen Dank – wir melden uns innerhalb eines Werktags bei Ihnen.</p>
+              <a href="index.html" class="btn btn-outline" style="margin-top: var(--sp-6);">Zurück zur Startseite</a>
+            </div>
+
+            <!-- Error State -->
+            <div id="formError" style="display:none; margin-top: var(--sp-4); padding: var(--sp-4); background: #fef2f2; border: 1px solid #fecaca; border-radius: var(--radius-sm);">
+              <p style="font-size: 0.875rem; color: #b91c1c; margin: 0;">Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an <a href="mailto:office@zeinersystems.at" style="color: #b91c1c; text-decoration: underline;">office@zeinersystems.at</a>.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Zeiner Systems. Alle Rechte vorbehalten.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

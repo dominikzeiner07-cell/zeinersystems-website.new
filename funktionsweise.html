@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funktionsweise – Zeiner Systems</title>
+  <meta name="description" content="So funktioniert der KI-Chatbot von Zeiner Systems: vom Besucher zur Antwort in Sekunden." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Zeiner<span>.</span></a>
+        <div class="nav-links">
+          <a href="index.html">Start</a>
+          <a href="leistungen.html">Leistungen</a>
+          <a href="funktionsweise.html" class="active">Funktionsweise</a>
+          <a href="angebote.html">Angebote</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="nav-cta">
+          <a href="angebote.html" class="btn btn-outline btn-sm">Pakete ansehen</a>
+          <a href="kontakt.html" class="btn btn-primary btn-sm">Kontakt aufnehmen</a>
+        </div>
+        <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Start</a>
+    <a href="leistungen.html">Leistungen & Ablauf</a>
+    <a href="funktionsweise.html">Funktionsweise</a>
+    <a href="angebote.html">Angebote</a>
+    <a href="kontakt.html">Kontakt</a>
+    <div class="mobile-menu-cta">
+      <a href="angebote.html" class="btn btn-outline btn-full">Pakete ansehen</a>
+      <a href="kontakt.html" class="btn btn-primary btn-full">Kontakt aufnehmen</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="section-label">Funktionsweise</div>
+        <h1>Wie der Chatbot <span class="gradient-text">funktioniert</span></h1>
+        <p>Von der Frage des Besuchers bis zur fertigen Antwort – einfach erklärt, ohne technischen Überbau.</p>
+      </div>
+    </section>
+
+    <!-- Flow Steps -->
+    <section style="background: var(--white);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Der Ablauf</div>
+          <h2>Fünf Schritte, eine Antwort</h2>
+          <p>Das alles passiert automatisch – in wenigen Sekunden.</p>
+        </div>
+
+        <div class="flow-steps">
+
+          <div class="flow-step">
+            <div class="flow-step-left">
+              <div class="flow-step-circle">1</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <h3>Besucher stellt eine Frage</h3>
+              <p>Ein Besucher öffnet das Chat-Widget auf Ihrer Website und gibt seine Frage ein – ganz natürlich, wie er es formulieren würde.</p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-left">
+              <div class="flow-step-circle">2</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <h3>Anfrage wird verarbeitet</h3>
+              <p>Das System nimmt die Frage entgegen und bereitet sie für die Suche in Ihrer Wissensbasis vor.</p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-left">
+              <div class="flow-step-circle">3</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <h3>Passende Inhalte werden gefunden</h3>
+              <p>Das System durchsucht die hinterlegten Inhalte – Ihre Website-Texte, FAQs, PDFs – und findet die Abschnitte, die am besten zur Frage passen.</p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-left">
+              <div class="flow-step-circle">4</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <h3>KI-Modell erstellt die Antwort</h3>
+              <p>Die gefundenen Inhalte werden zusammen mit der Frage an ein KI-Modell (GPT-4o mini oder GPT-4o) übergeben. Das Modell formuliert daraus eine verständliche, natürlichsprachige Antwort.</p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-left">
+              <div class="flow-step-circle">5</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <h3>Antwort erscheint im Chat</h3>
+              <p>Die fertige Antwort erscheint direkt im Chatfenster auf Ihrer Website – sofort, ohne Wartezeit.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Wissensbasis erklärt -->
+    <section style="background: var(--off-white);">
+      <div class="container">
+        <div class="section-header centered">
+          <div class="section-label">Die Wissensbasis</div>
+          <h2>Was der Chatbot „weiß"</h2>
+          <p>Der Chatbot antwortet nicht auf Basis des gesamten Internets – sondern nur auf Basis der Inhalte, die Sie bereitstellen. Das macht die Antworten präzise und relevant.</p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="card">
+            <div class="card-icon accent">🌐</div>
+            <h3>Website-Inhalte</h3>
+            <p>Texte Ihrer bestehenden Website dienen als Grundlage – Leistungen, Infoseiten, Über-uns, Kontakt.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon accent">📄</div>
+            <h3>PDFs & Dokumente</h3>
+            <p>Preislisten, Infoblätter oder Produktbeschreibungen als PDF können direkt eingepflegt werden.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon accent">❓</div>
+            <h3>FAQ-Listen</h3>
+            <p>Häufige Fragen und Antworten, die Sie selbst formuliert haben – als direkte Wissensquelle.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon accent">✏️</div>
+            <h3>Eigene Texte</h3>
+            <p>Individuelle Beschreibungen, Abläufe oder Hinweise, die nirgendwo anders stehen.</p>
+          </div>
+        </div>
+
+        <div class="mt-8" style="background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: var(--sp-5) var(--sp-6);">
+          <p style="font-size: 0.9rem; color: var(--gray-600); margin: 0;">
+            <strong style="color: var(--black);">Was sind Inhaltsabschnitte?</strong><br />
+            Die Wissensbasis speichert Inhalte in kleinen Abschnitten – grob entspricht ein Abschnitt etwa 125 Wörtern. Das Standard-Paket fasst bis zu 1.500, das Pro-Paket bis zu 5.000 solcher Abschnitte.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologie -->
+    <section style="background: var(--white);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Im Hintergrund</div>
+          <h2>Zuverlässige Technologie, einfach umgesetzt</h2>
+          <p>Im Hintergrund arbeiten bewährte Systeme – für Sie bleibt es einfach.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: var(--sp-4);">
+          <div style="display: flex; align-items: flex-start; gap: var(--sp-4); padding: var(--sp-5); background: var(--gray-50); border: 1px solid var(--gray-100); border-radius: var(--radius-md);">
+            <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); background: var(--black); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">🤖</div>
+            <div>
+              <h3 style="font-size: 1rem; margin-bottom: 4px;">GPT-Modell von OpenAI</h3>
+              <p style="font-size: 0.875rem;">Für die Antwortgenerierung nutzen wir GPT-4o mini (Standard) oder GPT-4o (Pro) – leistungsstarke Sprachmodelle, die natürliche Antworten formulieren.</p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: var(--sp-4); padding: var(--sp-5); background: var(--gray-50); border: 1px solid var(--gray-100); border-radius: var(--radius-md);">
+            <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); background: var(--black); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">🗄️</div>
+            <div>
+              <h3 style="font-size: 1rem; margin-bottom: 4px;">Sichere Wissensbasis</h3>
+              <p style="font-size: 0.875rem;">Ihre Inhalte werden in einer strukturierten Datenbank gespeichert und bei jeder Anfrage gezielt durchsucht – schnell und zuverlässig.</p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: var(--sp-4); padding: var(--sp-5); background: var(--gray-50); border: 1px solid var(--gray-100); border-radius: var(--radius-md);">
+            <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); background: var(--black); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">🪟</div>
+            <div>
+              <h3 style="font-size: 1rem; margin-bottom: 4px;">Website-Widget</h3>
+              <p style="font-size: 0.875rem;">Das Chat-Widget wird mit wenigen Zeilen Code in Ihre Website eingebunden und lässt sich optisch an Ihr Design anpassen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Neugierig geworden?</h2>
+        <p>Melden Sie sich – wir zeigen Ihnen, wie das für Ihre Website aussehen könnte.</p>
+        <div class="cta-banner-actions">
+          <a href="kontakt.html" class="btn btn-white btn-lg btn-full">Kontakt aufnehmen</a>
+          <a href="angebote.html" class="btn btn-outline-white btn-lg btn-full">Pakete ansehen</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Zeiner Systems. Alle Rechte vorbehalten.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
