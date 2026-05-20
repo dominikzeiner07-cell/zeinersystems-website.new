@@ -58,69 +58,89 @@
     </section>
 
     <!-- Flow Steps -->
-    <section style="background: var(--white);">
+    <section class="ps-section">
       <div class="container">
-        <div class="section-header">
-          <div class="section-label">Der Ablauf</div>
-          <h2>Fünf Schritte, eine Antwort</h2>
-          <p>Das alles passiert automatisch – in wenigen Sekunden.</p>
+
+        <div class="ps-header">
+          <div class="ps-header-left">
+            <span class="section-label">Der Ablauf</span>
+            <h2>Fünf Schritte, eine Antwort.</h2>
+          </div>
+          <div class="ps-header-right">
+            <p>Das alles passiert automatisch – in wenigen Sekunden.</p>
+          </div>
         </div>
 
-        <div class="flow-steps">
+        <div class="ps-split">
 
-          <div class="flow-step">
-            <div class="flow-step-left">
-              <div class="flow-step-circle">1</div>
-              <div class="flow-step-line"></div>
-            </div>
-            <div class="flow-step-content">
-              <h3>Besucher stellt eine Frage</h3>
-              <p>Ein Besucher öffnet das Chat-Widget auf Ihrer Website und gibt seine Frage ein – ganz natürlich, wie er es formulieren würde.</p>
-            </div>
+          <!-- Left: Steps -->
+          <div class="ps-steps" role="list">
+
+            <button class="ps-step active" data-step="1" role="listitem" aria-pressed="true">
+              <span class="ps-num">01</span>
+              <div class="ps-step-body">
+                <span class="ps-step-title">Besucher stellt eine Frage</span>
+                <p class="ps-step-desc">Ein Besucher öffnet das Chat-Widget auf Ihrer Website und gibt seine Frage ein – ganz natürlich, wie er es formulieren würde.</p>
+              </div>
+            </button>
+
+            <button class="ps-step" data-step="2" role="listitem" aria-pressed="false">
+              <span class="ps-num">02</span>
+              <div class="ps-step-body">
+                <span class="ps-step-title">Anfrage wird verarbeitet</span>
+                <p class="ps-step-desc">Das System nimmt die Frage entgegen und bereitet sie für die Suche in Ihrer Wissensbasis vor.</p>
+              </div>
+            </button>
+
+            <button class="ps-step" data-step="3" role="listitem" aria-pressed="false">
+              <span class="ps-num">03</span>
+              <div class="ps-step-body">
+                <span class="ps-step-title">Passende Inhalte werden gefunden</span>
+                <p class="ps-step-desc">Das System durchsucht die hinterlegten Inhalte – Ihre Website-Texte, FAQs, PDFs – und findet die Abschnitte, die am besten zur Frage passen.</p>
+              </div>
+            </button>
+
+            <button class="ps-step" data-step="4" role="listitem" aria-pressed="false">
+              <span class="ps-num">04</span>
+              <div class="ps-step-body">
+                <span class="ps-step-title">KI-Modell erstellt die Antwort</span>
+                <p class="ps-step-desc">Die gefundenen Inhalte werden zusammen mit der Frage an ein KI-Modell (GPT-4o mini oder GPT-4o) übergeben. Das Modell formuliert daraus eine verständliche, natürlichsprachige Antwort.</p>
+              </div>
+            </button>
+
+            <button class="ps-step" data-step="5" role="listitem" aria-pressed="false">
+              <span class="ps-num">05</span>
+              <div class="ps-step-body">
+                <span class="ps-step-title">Antwort erscheint im Chat</span>
+                <p class="ps-step-desc">Die fertige Antwort erscheint direkt im Chatfenster auf Ihrer Website – sofort, ohne Wartezeit.</p>
+              </div>
+            </button>
+
           </div>
 
-          <div class="flow-step">
-            <div class="flow-step-left">
-              <div class="flow-step-circle">2</div>
-              <div class="flow-step-line"></div>
-            </div>
-            <div class="flow-step-content">
-              <h3>Anfrage wird verarbeitet</h3>
-              <p>Das System nimmt die Frage entgegen und bereitet sie für die Suche in Ihrer Wissensbasis vor.</p>
-            </div>
-          </div>
+          <!-- Right: Visual Panel -->
+          <div class="ps-visual-panel" aria-hidden="true">
 
-          <div class="flow-step">
-            <div class="flow-step-left">
-              <div class="flow-step-circle">3</div>
-              <div class="flow-step-line"></div>
+            <div class="ps-visual active" data-visual="1">
+              <div class="ps-placeholder">💬<span>Grafik folgt</span></div>
             </div>
-            <div class="flow-step-content">
-              <h3>Passende Inhalte werden gefunden</h3>
-              <p>Das System durchsucht die hinterlegten Inhalte – Ihre Website-Texte, FAQs, PDFs – und findet die Abschnitte, die am besten zur Frage passen.</p>
-            </div>
-          </div>
 
-          <div class="flow-step">
-            <div class="flow-step-left">
-              <div class="flow-step-circle">4</div>
-              <div class="flow-step-line"></div>
+            <div class="ps-visual" data-visual="2">
+              <div class="ps-placeholder">⚙️<span>Grafik folgt</span></div>
             </div>
-            <div class="flow-step-content">
-              <h3>KI-Modell erstellt die Antwort</h3>
-              <p>Die gefundenen Inhalte werden zusammen mit der Frage an ein KI-Modell (GPT-4o mini oder GPT-4o) übergeben. Das Modell formuliert daraus eine verständliche, natürlichsprachige Antwort.</p>
-            </div>
-          </div>
 
-          <div class="flow-step">
-            <div class="flow-step-left">
-              <div class="flow-step-circle">5</div>
-              <div class="flow-step-line"></div>
+            <div class="ps-visual" data-visual="3">
+              <div class="ps-placeholder">🔍<span>Grafik folgt</span></div>
             </div>
-            <div class="flow-step-content">
-              <h3>Antwort erscheint im Chat</h3>
-              <p>Die fertige Antwort erscheint direkt im Chatfenster auf Ihrer Website – sofort, ohne Wartezeit.</p>
+
+            <div class="ps-visual" data-visual="4">
+              <div class="ps-placeholder">🤖<span>Grafik folgt</span></div>
             </div>
+
+            <div class="ps-visual" data-visual="5">
+              <div class="ps-placeholder">✅<span>Grafik folgt</span></div>
+            </div>
+
           </div>
 
         </div>

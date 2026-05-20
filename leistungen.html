@@ -58,98 +58,77 @@
     </section>
 
     <!-- Process Steps -->
-    <section style="background: var(--white);">
+    <section class="ps-section">
       <div class="container">
-        <div class="ablauf-header">
-          <div>
+
+        <div class="ps-header">
+          <div class="ps-header-left">
             <span class="section-label">Der Ablauf</span>
-            <h2 style="margin-top: var(--sp-3);">In vier Schritten zum fertigen Chatbot</h2>
+            <h2>In vier Schritten zum fertigen Chatbot.</h2>
           </div>
-          <div>
-            <p style="font-size: 1.05rem;"></p>
+          <div class="ps-header-right">
+            <p></p>
           </div>
         </div>
 
-        <div class="ablauf-rows">
+        <div class="ps-split">
 
-          <div class="ablauf-row">
-            <div class="ablauf-row-left">
-              <span class="ablauf-row-num">01</span>
-            </div>
-            <div class="ablauf-row-right">
-              <h3>Demo anfordern</h3>
-              <p>Schicken Sie uns einfach die URL Ihrer Website – wir erstellen darauf basierend eine erste Demo. Auf Wunsch auch mit einem kurzen persönlichen Online-Gespräch.</p>
-              <button class="ablauf-toggle" aria-expanded="false">
-                <span>Details anzeigen</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </button>
-              <ul class="ablauf-row-list">
-                <li>Website-URL genügt für den Start</li>
-                <li>Demo wird kostenlos erstellt</li>
-                <li>Auf Wunsch persönliches Online-Gespräch</li>
-                <li>Kein technisches Vorwissen nötig</li>
-              </ul>
-            </div>
+          <!-- Left: Steps -->
+          <div class="ps-steps" role="list">
+
+            <button class="ps-step active" data-step="1" role="listitem" aria-pressed="true">
+              <span class="ps-num">01</span>
+              <div class="ps-step-body">
+                <span class="ps-step-title">Demo anfordern</span>
+                <p class="ps-step-desc">Schicken Sie uns die URL Ihrer Website – wir erstellen darauf basierend eine erste Demo. Auf Wunsch auch mit einem kurzen persönlichen Online-Gespräch.</p>
+              </div>
+            </button>
+
+            <button class="ps-step" data-step="2" role="listitem" aria-pressed="false">
+              <span class="ps-num">02</span>
+              <div class="ps-step-body">
+                <span class="ps-step-title">Inhalte ergänzen</span>
+                <p class="ps-step-desc">Wer möchte, schickt uns weitere Unterlagen – PDFs, FAQs oder Preislisten per Mail. Je mehr wir wissen, desto besser wird der Chatbot.</p>
+              </div>
+            </button>
+
+            <button class="ps-step" data-step="3" role="listitem" aria-pressed="false">
+              <span class="ps-num">03</span>
+              <div class="ps-step-body">
+                <span class="ps-step-title">Widget einbinden</span>
+                <p class="ps-step-desc">Das Chat-Widget wird in Ihre Website integriert und optisch angepasst. Sie sehen alles vor dem Livegang.</p>
+              </div>
+            </button>
+
+            <button class="ps-step" data-step="4" role="listitem" aria-pressed="false">
+              <span class="ps-num">04</span>
+              <div class="ps-step-body">
+                <span class="ps-step-title">Live & weiter optimieren</span>
+                <p class="ps-step-desc">Sobald der Chatbot live ist, beantwortet er Kundenfragen direkt auf Ihrer Website. Inhalte können jederzeit ergänzt werden.</p>
+              </div>
+            </button>
+
           </div>
 
-          <div class="ablauf-row">
-            <div class="ablauf-row-left">
-              <span class="ablauf-row-num">02</span>
-            </div>
-            <div class="ablauf-row-right">
-              <h3>Inhalte ergänzen</h3>
-              <p>Wer möchte, schickt uns weitere Unterlagen – PDFs, FAQs, Preislisten oder sonstige Infos. Per Mail, ganz unkompliziert. Je mehr wir wissen, desto besser wird der Chatbot.</p>
-              <button class="ablauf-toggle" aria-expanded="false">
-                <span>Details anzeigen</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </button>
-              <ul class="ablauf-row-list">
-                <li>PDFs, FAQs oder Preislisten optional</li>
-                <li>Übermittlung einfach per Mail</li>
-                <li>Verhalten und Ton des Chatbots abstimmen</li>
-                <li>Erste Tests & Freigabe durch Sie</li>
-              </ul>
-            </div>
-          </div>
+          <!-- Right: Visual Panel -->
+          <div class="ps-visual-panel" aria-hidden="true">
 
-          <div class="ablauf-row">
-            <div class="ablauf-row-left">
-              <span class="ablauf-row-num">03</span>
+            <div class="ps-visual active" data-visual="1">
+              <div class="ps-placeholder">🖥️<span>Grafik folgt</span></div>
             </div>
-            <div class="ablauf-row-right">
-              <h3>Widget einbinden</h3>
-              <p>Wir integrieren das Chat-Widget direkt in Ihre Website und passen es optisch an Ihr Design an. Sie sehen alles vor dem Livegang.</p>
-              <button class="ablauf-toggle" aria-expanded="false">
-                <span>Details anzeigen</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </button>
-              <ul class="ablauf-row-list">
-                <li>Widget in Ihre Website integrieren</li>
-                <li>Farben und Optik anpassen</li>
-                <li>Gemeinsam testen und freigeben</li>
-                <li>Livegang nach Ihrer Freigabe</li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="ablauf-row" style="border-bottom: none;">
-            <div class="ablauf-row-left">
-              <span class="ablauf-row-num">04</span>
+            <div class="ps-visual" data-visual="2">
+              <div class="ps-placeholder">📄<span>Grafik folgt</span></div>
             </div>
-            <div class="ablauf-row-right">
-              <h3>Live & weiter optimieren</h3>
-              <p>Sobald der Chatbot live ist, beantwortet er Kundenfragen direkt auf Ihrer Website. Inhalte können jederzeit ergänzt oder angepasst werden.</p>
-              <button class="ablauf-toggle" aria-expanded="false">
-                <span>Details anzeigen</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </button>
-              <ul class="ablauf-row-list">
-                <li>Chatbot sofort einsatzbereit</li>
-                <li>Antwortqualität weiter verbessern</li>
-                <li>Neue Inhalte jederzeit ergänzen</li>
-                <li>Bei Bedarf weiter ausbauen</li>
-              </ul>
+
+            <div class="ps-visual" data-visual="3">
+              <div class="ps-placeholder">🪟<span>Grafik folgt</span></div>
             </div>
+
+            <div class="ps-visual" data-visual="4">
+              <div class="ps-placeholder">✅<span>Grafik folgt</span></div>
+            </div>
+
           </div>
 
         </div>
