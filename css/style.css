@@ -778,8 +778,6 @@ section { padding: var(--sp-16) 0; }
 }
 @media (min-width: 900px) {
   .ps-visual-panel {
-    position: sticky;
-    top: calc(var(--nav-h) + var(--sp-6));
     min-height: 400px;
   }
 }
