@@ -100,14 +100,15 @@
 
           <!-- Right: Visual -->
           <div class="hero-visual" aria-hidden="true">
-            <video
-              src="assets/animation-prototyp.MOV"
-              autoplay
-              loop
-              muted
-              playsinline
-              style="width:100%; border-radius: var(--radius-xl); display:block;"
-            ></video>
+            <div class="hero-video-wrap">
+              <video
+                src="assets/animation-prototyp.MOV"
+                autoplay
+                loop
+                muted
+                playsinline
+              ></video>
+            </div>
           </div>
 
         </div>
@@ -132,28 +133,8 @@
 
           <!-- Card 1: Ihre Inhalte -->
           <div class="highlight-card">
-            <div class="highlight-visual hl-visual-content" aria-hidden="true">
-              <div class="hl-sources">
-                <div class="hl-source-item">
-                  <span>🌐</span><span>Website</span>
-                </div>
-                <div class="hl-source-item">
-                  <span>📄</span><span>PDF</span>
-                </div>
-                <div class="hl-source-item">
-                  <span>❓</span><span>FAQ</span>
-                </div>
-              </div>
-              <div class="hl-arrow-row">
-                <div class="hl-arrow-line"></div>
-                <div class="hl-arrow-dot"></div>
-                <div class="hl-arrow-line"></div>
-              </div>
-              <div class="hl-chat-bubble">
-                <div class="hl-chat-dot"></div>
-                <div class="hl-chat-line short"></div>
-                <div class="hl-chat-line"></div>
-              </div>
+            <div class="highlight-visual" aria-hidden="true">
+              <img src="assets/card1HP.png" alt="" class="highlight-card-img" />
             </div>
             <div class="highlight-body">
               <h3>Basiert auf Ihren Inhalten</h3>
@@ -163,25 +144,8 @@
 
           <!-- Card 2: Kein Risiko -->
           <div class="highlight-card">
-            <div class="highlight-visual hl-visual-risk" aria-hidden="true">
-              <div class="hl-risk-price">
-                <span class="hl-risk-zero">0 €</span>
-                <span class="hl-risk-label">im ersten Monat</span>
-              </div>
-              <div class="hl-risk-items">
-                <div class="hl-risk-item">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  Einrichtung inklusive
-                </div>
-                <div class="hl-risk-item">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  Monatlich kündbar
-                </div>
-                <div class="hl-risk-item">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  Kein langer Vertrag
-                </div>
-              </div>
+            <div class="highlight-visual" aria-hidden="true">
+              <img src="assets/card2HP.png" alt="" class="highlight-card-img" />
             </div>
             <div class="highlight-body">
               <h3>Kein Risiko, kein langer Vertrag</h3>
@@ -191,24 +155,8 @@
 
           <!-- Card 3: Sicherheit -->
           <div class="highlight-card">
-            <div class="highlight-visual hl-visual-security" aria-hidden="true">
-              <div class="hl-shield">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <div class="hl-security-checks">
-                <div class="hl-security-item">
-                  <div class="hl-security-dot"></div>
-                  Auf Sicherheitslücken geprüft
-                </div>
-                <div class="hl-security-item">
-                  <div class="hl-security-dot"></div>
-                  Vertrauenswürdige Infrastruktur
-                </div>
-                <div class="hl-security-item">
-                  <div class="hl-security-dot"></div>
-                  Sorgfältiger Umgang mit Daten
-                </div>
-              </div>
+            <div class="highlight-visual" aria-hidden="true">
+              <img src="assets/card3HP.png" alt="" class="highlight-card-img" />
             </div>
             <div class="highlight-body">
               <h3>Sicherheit ernst genommen</h3>
@@ -230,32 +178,32 @@
 
         <div class="features-grid">
           <div class="card">
-            <div class="card-icon accent">💬</div>
+            <div class="feat-num">01</div>
             <h3>Schnellere Antworten</h3>
             <p>Besucher bekommen sofort eine Antwort – auch außerhalb der Geschäftszeiten.</p>
           </div>
           <div class="card">
-            <div class="card-icon accent">🎯</div>
+            <div class="feat-num">02</div>
             <h3>Auf Ihre Inhalte zugeschnitten</h3>
             <p>Der Chatbot antwortet auf Basis Ihrer Website, FAQs, PDFs oder Preislisten.</p>
           </div>
           <div class="card">
-            <div class="card-icon accent">⚙️</div>
+            <div class="feat-num">03</div>
             <h3>Einrichtung inklusive</h3>
             <p>Wir übernehmen die komplette Einrichtung. Sie müssen sich um nichts kümmern.</p>
           </div>
           <div class="card">
-            <div class="card-icon accent">📱</div>
+            <div class="feat-num">04</div>
             <h3>Direkt auf Ihrer Website</h3>
             <p>Das Widget wird sauber in Ihre bestehende Website eingebunden – optisch anpassbar.</p>
           </div>
           <div class="card">
-            <div class="card-icon accent">🔓</div>
+            <div class="feat-num">05</div>
             <h3>Monatlich kündbar</h3>
             <p>Kein langfristiger Vertrag. Flexibel bleiben, solange Sie möchten.</p>
           </div>
           <div class="card">
-            <div class="card-icon accent">📈</div>
+            <div class="feat-num">06</div>
             <h3>Erweiterbar</h3>
             <p>Inhalte können jederzeit ergänzt oder optimiert werden. Der Chatbot wächst mit.</p>
           </div>
@@ -285,8 +233,8 @@
             <button class="ps-step active" data-step="1" role="listitem" aria-pressed="true">
               <span class="ps-num">01</span>
               <div class="ps-step-body">
-                <span class="ps-step-title">Gespräch & Planung</span>
-                <p class="ps-step-desc">Kurzes Erstgespräch: Wir klären Ziele, typische Kundenfragen und welches Paket passt. Kein technisches Vorwissen nötig.</p>
+                <span class="ps-step-title">Demo anfordern</span>
+                <p class="ps-step-desc">Schicken Sie uns einfach Ihre Website-URL – wir erstellen eine erste Demo. Auf Wunsch auch mit einem kurzen persönlichen Online-Gespräch.</p>
               </div>
             </button>
 
@@ -343,7 +291,7 @@
                   </div>
                 </div>
               </div>
-              <div class="ps-vis-label">Erstgespräch</div>
+              <div class="ps-vis-label">Demo wird erstellt</div>
             </div>
 
             <!-- Visual 2: Inhalte -->
