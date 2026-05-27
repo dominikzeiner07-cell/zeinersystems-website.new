@@ -46,17 +46,25 @@ document.querySelectorAll('.ps-step').forEach(btn => {
     const step = btn.dataset.step;
     const section = btn.closest('.ps-section');
     if (!section) return;
+    if (btn.classList.contains('active')) return;
 
+    // Close all steps instantly (CSS has no close-transition, so this is immediate)
     section.querySelectorAll('.ps-step').forEach(b => {
       b.classList.remove('active');
       b.setAttribute('aria-pressed', 'false');
     });
-    section.querySelectorAll('.ps-visual').forEach(v => v.classList.remove('active'));
 
-    btn.classList.add('active');
-    btn.setAttribute('aria-pressed', 'true');
+    // Swap visual panel immediately
+    section.querySelectorAll('.ps-visual').forEach(v => v.classList.remove('active'));
     const visual = section.querySelector(`.ps-visual[data-visual="${step}"]`);
     if (visual) visual.classList.add('active');
+
+    // Open new step in the next paint frame so the browser renders
+    // the closed state first – this prevents the jump
+    requestAnimationFrame(() => {
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+    });
   });
 });
 
@@ -99,16 +107,18 @@ if (contactForm) {
     const successMsg = document.getElementById('formSuccess');
     const errorMsg = document.getElementById('formError');
 
-    // Datenschutz-Checkbox muss angekreuzt sein
-    const privacyCheckbox = contactForm.querySelector('[name="privacy"]');
-    if (privacyCheckbox && !privacyCheckbox.checked) {
-      const label = privacyCheckbox.closest('.form-checkbox');
-      if (label) {
-        label.style.color = '#b91c1c';
-        privacyCheckbox.addEventListener('change', () => { label.style.color = ''; }, { once: true });
+    // Pflichtfelder prüfen (JS-Fallback für file:// und alle Browser)
+    let hasError = false;
+    contactForm.querySelectorAll('[required]').forEach(field => {
+      const empty = field.type === 'checkbox' ? !field.checked : !field.value.trim();
+      if (empty) {
+        hasError = true;
+        field.style.borderColor = '#b91c1c';
+        field.addEventListener('input', () => { field.style.borderColor = ''; }, { once: true });
+        field.addEventListener('change', () => { field.style.borderColor = ''; }, { once: true });
       }
-      return;
-    }
+    });
+    if (hasError) return;
 
     const originalHTML = submitBtn.innerHTML;
     submitBtn.disabled = true;
