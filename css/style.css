@@ -177,6 +177,7 @@ section { padding: var(--sp-16) 0; }
   font-size: 1.25rem;
 }
 .card-icon.accent { background: rgba(124,58,237,.1); }
+.card-icon.dark   { background: var(--accent-grad); padding: 10px; }
 
 .feat-num {
   font-size: 2rem;
@@ -1435,8 +1436,9 @@ section { padding: var(--sp-16) 0; }
 @media (min-width: 640px) { .requirements-grid { grid-template-columns: repeat(2, 1fr); max-width: 720px; margin: 0 auto; } }
 
 .req-item {
-  background: var(--white);
-  border: 1px solid var(--gray-100);
+  background: linear-gradient(var(--white), var(--white)) padding-box,
+              var(--accent-grad) border-box;
+  border: 2px solid transparent;
   border-radius: var(--radius-lg);
   padding: var(--sp-8) var(--sp-6);
   display: flex;
