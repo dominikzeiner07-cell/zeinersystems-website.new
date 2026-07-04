@@ -1765,7 +1765,7 @@ section { padding: var(--sp-16) 0; }
 /* ── Über uns ─────────────────────────────────────────────── */
 .about-top { display: grid; grid-template-columns: 1fr; gap: var(--sp-8); align-items: center; margin-bottom: var(--sp-12); }
 .about-photo { order: -1; max-width: 260px; margin: 0 auto; }
-.about-photo img { width: 100%; border-radius: var(--radius-lg); display: block; }
+.about-photo img { width: 100%; height: auto; border-radius: var(--radius-lg); display: block; }
 .about-text p { font-size: 1.0625rem; line-height: 1.75; color: var(--gray-600); }
 .about-text p + p { margin-top: var(--sp-4); }
 .about-text h2 { margin-bottom: var(--sp-5); }
