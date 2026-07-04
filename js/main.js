@@ -35,7 +35,7 @@ if (hamburger && mobileMenu) {
 
 // ── Active nav link ────────────────────────────────────────
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('.nav-links a, .footer-col a').forEach(link => {
+document.querySelectorAll('.nav-links a').forEach(link => {
   const href = link.getAttribute('href');
   if (href === currentPage) link.classList.add('active');
 });
@@ -150,7 +150,9 @@ if (contactForm) {
 // ── Smooth scroll for anchor links ────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
-    const target = document.querySelector(anchor.getAttribute('href'));
+    const href = anchor.getAttribute('href');
+    if (href === '#') return; // Platzhalter-Links ignorieren
+    const target = document.querySelector(href);
     if (target) {
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });

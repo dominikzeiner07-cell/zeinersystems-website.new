@@ -3,6 +3,24 @@
    Mobile-first. Desktop via min-width breakpoints.
    ============================================================ */
 
+/* ── Fonts (lokal gehostet, Inter Variable 400–800) ───────── */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('../assets/fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('../assets/fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 /* ── Reset & Box-Model ────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
@@ -1673,3 +1691,99 @@ section { padding: var(--sp-16) 0; }
   line-height: 1.7;
 }
 .faq-answer.open { display: block; }
+
+/* ============================================================
+   Komponenten (aus Inline-Styles konsolidiert)
+   ============================================================ */
+
+/* ── Utilities ────────────────────────────────────────────── */
+.bg-white { background: var(--white); }
+.bg-off-white { background: var(--off-white); }
+.mb-6 { margin-bottom: var(--sp-6); }
+.required { color: var(--accent-from); }
+.text-note { font-size: 0.875rem; color: var(--gray-400); }
+.text-note a { color: var(--accent-from); text-decoration: underline; }
+
+/* Weicher Übergang zwischen weißen und off-white Sections */
+.section-fade { height: 80px; background: linear-gradient(to bottom, var(--white), var(--off-white)); margin-top: -1px; }
+
+/* ── Zentrierter Page-Hero ────────────────────────────────── */
+.page-hero.centered { text-align: center; }
+.page-hero.centered .section-label { justify-content: center; }
+.page-hero.centered p { margin: var(--sp-4) auto 0; max-width: 520px; }
+
+/* ── Info-Box (Hinweis-Kästen) ────────────────────────────── */
+.info-box { background: var(--gray-50); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: var(--sp-5) var(--sp-6); }
+.info-box.on-gray { background: var(--white); }
+.info-box p { font-size: 0.875rem; color: var(--gray-600); margin: 0; }
+.info-box strong { color: var(--black); }
+
+/* ── Tech-Stack-Liste (Funktionsweise) ────────────────────── */
+.tech-list { display: grid; grid-template-columns: 1fr; gap: var(--sp-4); }
+.tech-item { display: flex; align-items: flex-start; gap: var(--sp-4); padding: var(--sp-5); background: var(--gray-50); border: 1px solid var(--gray-100); border-radius: var(--radius-md); }
+.tech-item-icon { width: 44px; height: 44px; border-radius: var(--radius-sm); background: var(--black); display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 10px; }
+.tech-item h3 { font-size: 1rem; margin-bottom: 4px; }
+.tech-item p { font-size: 0.875rem; }
+
+/* ── Pricing: Detail-Karten (Angebote) ────────────────────── */
+.pricing-card.featured, .pricing-full-card.featured { position: relative; }
+.pricing-full-card .pricing-card-name { font-size: 1.1rem; margin-bottom: var(--sp-2); }
+.pricing-full-card .pricing-card-sub { margin-bottom: 0; margin-top: var(--sp-1); }
+.pricing-full-features { display: flex; flex-direction: column; gap: var(--sp-3); margin-bottom: var(--sp-8); flex: 1; }
+.pricing-full-features strong { font-size: 0.9rem; color: var(--black); }
+.pricing-full-features p { font-size: 0.8rem; margin-top: 2px; }
+
+/* ── Vergleichstabelle (Angebote) ─────────────────────────── */
+.compare-scroll { max-width: 680px; margin: 0 auto; overflow-x: auto; }
+.compare-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.compare-table thead tr { border-bottom: 2px solid var(--gray-100); }
+.compare-table th { padding: var(--sp-3) var(--sp-4); text-align: center; font-weight: 700; color: var(--black); }
+.compare-table th:first-child { text-align: left; color: var(--gray-600); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.compare-table th:last-child { color: var(--accent-from); }
+.compare-table tbody tr { border-bottom: 1px solid var(--gray-100); }
+.compare-table tbody tr:last-child { border-bottom: none; }
+.compare-table tbody tr:nth-child(odd) { background: var(--white); }
+.compare-table td { padding: var(--sp-4); text-align: center; }
+.compare-table td:first-child { text-align: left; color: var(--gray-600); }
+.compare-table td.pro { color: var(--accent-from); }
+.compare-sub { display: block; font-size: 0.75rem; color: var(--gray-400); font-weight: 400; margin-top: 2px; }
+
+/* ── Kontakt: Ablauf-Box & Formular-Details ───────────────── */
+.contact-section { padding: var(--sp-16) 0 var(--sp-20); background: var(--white); }
+.next-steps { margin-top: var(--sp-8); padding: var(--sp-5); background: var(--off-white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); }
+.next-steps h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: var(--sp-4); color: var(--black); }
+.next-steps ul { display: flex; flex-direction: column; gap: var(--sp-3); }
+.next-steps li { display: flex; gap: var(--sp-3); font-size: 0.875rem; color: var(--gray-600); }
+.step-num { width: 22px; height: 22px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 0.7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.form-footnote { font-size: 0.78rem; color: var(--gray-400); text-align: center; margin-top: var(--sp-4); }
+.form-success p { color: var(--gray-600); font-size: 0.95rem; }
+.form-success .btn { margin-top: var(--sp-6); }
+.form-error { display: none; margin-top: var(--sp-4); padding: var(--sp-4); background: #fef2f2; border: 1px solid #fecaca; border-radius: var(--radius-sm); }
+.form-error p { font-size: 0.875rem; color: #b91c1c; margin: 0; }
+.form-error a { color: #b91c1c; text-decoration: underline; }
+
+/* ── Über uns ─────────────────────────────────────────────── */
+.about-top { display: grid; grid-template-columns: 1fr; gap: var(--sp-8); align-items: center; margin-bottom: var(--sp-12); }
+.about-photo { order: -1; max-width: 260px; margin: 0 auto; }
+.about-photo img { width: 100%; border-radius: var(--radius-lg); display: block; }
+.about-text p { font-size: 1.0625rem; line-height: 1.75; color: var(--gray-600); }
+.about-text p + p { margin-top: var(--sp-4); }
+.about-text h2 { margin-bottom: var(--sp-5); }
+.about-blocks { display: grid; grid-template-columns: 1fr; gap: var(--sp-5); }
+.about-block { background: var(--off-white); border-radius: var(--radius-lg); padding: var(--sp-8); }
+.about-block h3 { font-size: 1.125rem; margin-bottom: var(--sp-4); }
+.about-block p { font-size: 0.9375rem; line-height: 1.75; color: var(--gray-600); }
+.about-cta { margin-top: var(--sp-12); display: flex; gap: var(--sp-3); flex-wrap: wrap; }
+@media (min-width: 768px) {
+  .about-top { grid-template-columns: 1fr 300px; gap: var(--sp-16); margin-bottom: var(--sp-16); }
+  .about-photo { order: 0; max-width: none; margin: 0; }
+  .about-blocks { grid-template-columns: 1fr 1fr; gap: var(--sp-8); }
+}
+
+/* ── 404 ──────────────────────────────────────────────────── */
+.error-hero { min-height: 55vh; display: flex; align-items: center; }
+.error-actions { margin-top: var(--sp-8); display: flex; gap: var(--sp-3); justify-content: center; flex-wrap: wrap; }
+
+/* ── Leistungen: Voraussetzungen ──────────────────────────── */
+.req-item h3 { font-size: 1rem; margin-bottom: 4px; }
+.req-item p { font-size: 0.875rem; }

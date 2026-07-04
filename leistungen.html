@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leistungen & Ablauf – Zeiner Systems</title>
   <meta name="description" content="So läuft die Einrichtung Ihres Website-Chatbots ab: von der Planung über die Einrichtung bis zum Livegang." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Open Graph / Social Preview (og:image-URL nach Domain-Umzug anpassen) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Zeiner Systems" />
+  <meta property="og:title" content="Leistungen & Ablauf – Zeiner Systems" />
+  <meta property="og:description" content="So läuft die Einrichtung Ihres Website-Chatbots ab: von der Planung über die Einrichtung bis zum Livegang." />
+  <meta property="og:image" content="https://dominikzeiner07-cell.github.io/zeinersystems-website.new/assets/og-image.jpg" />
+  <meta property="og:locale" content="de_AT" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -15,13 +23,14 @@
   <nav class="nav" role="navigation" aria-label="Hauptnavigation">
     <div class="container">
       <div class="nav-inner">
-        <a href="index.html" class="nav-logo"><img src="assets/logo.final.png" alt="Zeiner Systems" class="nav-logo-img" /></a>
+        <a href="index.html" class="nav-logo"><img src="assets/logo.final.png" alt="Zeiner Systems" width="601" height="120" class="nav-logo-img" /></a>
         <div class="nav-links">
           <a href="index.html">Start</a>
           <a href="leistungen.html" class="active">Leistungen</a>
           <a href="funktionsweise.html">Funktionsweise</a>
           <a href="angebote.html">Angebote</a>
           <a href="kontakt.html">Kontakt</a>
+          <a href="ueber-uns.html">Über uns</a>
         </div>
         <div class="nav-cta">
           <a href="angebote.html" class="btn btn-outline btn-sm">Pakete ansehen</a>
@@ -75,9 +84,9 @@
         <div class="ps-split">
 
           <!-- Left: Steps -->
-          <div class="ps-steps" role="list">
+          <div class="ps-steps">
 
-            <button class="ps-step active" data-step="1" role="listitem" aria-pressed="true">
+            <button class="ps-step active" data-step="1" aria-pressed="true">
               <span class="ps-num">01</span>
               <div class="ps-step-body">
                 <span class="ps-step-title">Demo anfordern</span>
@@ -85,7 +94,7 @@
               </div>
             </button>
 
-            <button class="ps-step" data-step="2" role="listitem" aria-pressed="false">
+            <button class="ps-step" data-step="2" aria-pressed="false">
               <span class="ps-num">02</span>
               <div class="ps-step-body">
                 <span class="ps-step-title">Inhalte ergänzen</span>
@@ -93,7 +102,7 @@
               </div>
             </button>
 
-            <button class="ps-step" data-step="3" role="listitem" aria-pressed="false">
+            <button class="ps-step" data-step="3" aria-pressed="false">
               <span class="ps-num">03</span>
               <div class="ps-step-body">
                 <span class="ps-step-title">Widget einbinden</span>
@@ -101,7 +110,7 @@
               </div>
             </button>
 
-            <button class="ps-step" data-step="4" role="listitem" aria-pressed="false">
+            <button class="ps-step" data-step="4" aria-pressed="false">
               <span class="ps-num">04</span>
               <div class="ps-step-body">
                 <span class="ps-step-title">Live & weiter optimieren</span>
@@ -115,16 +124,16 @@
           <div class="ps-visual-panel" aria-hidden="true">
 
             <div class="ps-visual active" data-visual="1">
-              <img src="assets/schritt1.png" alt="Demo anfordern" class="ps-visual-img" />
+              <img src="assets/schritt1.jpg" alt="Demo anfordern" width="1100" height="619" loading="lazy" class="ps-visual-img" />
             </div>
             <div class="ps-visual" data-visual="2">
-              <img src="assets/schritt2.png" alt="Inhalte ergänzen" class="ps-visual-img" />
+              <img src="assets/schritt2.jpg" alt="Inhalte ergänzen" width="1100" height="619" loading="lazy" class="ps-visual-img" />
             </div>
             <div class="ps-visual" data-visual="3">
-              <img src="assets/schritt3.png" alt="Widget einbinden" class="ps-visual-img" />
+              <img src="assets/schritt3.jpg" alt="Widget einbinden" width="1100" height="619" loading="lazy" class="ps-visual-img" />
             </div>
             <div class="ps-visual" data-visual="4">
-              <img src="assets/schritt4.png" alt="Live & weiter optimieren" class="ps-visual-img" />
+              <img src="assets/schritt4.jpg" alt="Live & weiter optimieren" width="1100" height="619" loading="lazy" class="ps-visual-img" />
             </div>
 
           </div>
@@ -134,7 +143,7 @@
     </section>
 
     <!-- Was wir brauchen -->
-    <section style="background: var(--off-white);">
+    <section class="bg-off-white">
       <div class="container">
         <div class="section-header centered">
           <div class="section-label">Voraussetzungen</div>
@@ -144,19 +153,19 @@
 
         <div class="requirements-grid">
           <div class="req-item">
-            <h3 style="font-size:1rem; margin-bottom: 4px;">Bestehende Website</h3>
-            <p style="font-size:0.875rem;">Ihre Website dient als inhaltliche Grundlage für den Chatbot.</p>
+            <h3>Bestehende Website</h3>
+            <p>Ihre Website dient als inhaltliche Grundlage für den Chatbot.</p>
           </div>
           <div class="req-item">
-            <h3 style="font-size:1rem; margin-bottom: 4px;">Optionale Zusatzinhalte</h3>
-            <p style="font-size:0.875rem;">PDFs, FAQs oder Preislisten – wenn vorhanden, können wir diese einbinden.</p>
+            <h3>Optionale Zusatzinhalte</h3>
+            <p>PDFs, FAQs oder Preislisten – wenn vorhanden, können wir diese einbinden.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Was der Chatbot kann -->
-    <section style="background: var(--white);">
+    <section class="bg-white">
       <div class="container">
         <div class="section-header centered">
           <div class="section-label">Leistungsumfang</div>
@@ -208,9 +217,9 @@
           </div>
         </div>
 
-        <div class="mt-8" style="background: var(--gray-50); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: var(--sp-5);">
-          <p style="font-size: 0.875rem; color: var(--gray-600);">
-            <strong style="color: var(--black);">Hinweis:</strong> Bei rechtlichen, steuerlichen oder medizinischen Themen verweist der Chatbot auf den persönlichen Kontakt.
+        <div class="info-box mt-8">
+          <p>
+            <strong>Hinweis:</strong> Bei rechtlichen, steuerlichen oder medizinischen Themen verweist der Chatbot auf den persönlichen Kontakt.
           </p>
         </div>
       </div>

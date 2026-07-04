@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt – Zeiner Systems</title>
   <meta name="description" content="Nehmen Sie Kontakt zu Zeiner Systems auf. Wir beraten Sie gerne zu Ihrem Website-Chatbot." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Open Graph / Social Preview (og:image-URL nach Domain-Umzug anpassen) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Zeiner Systems" />
+  <meta property="og:title" content="Kontakt – Zeiner Systems" />
+  <meta property="og:description" content="Nehmen Sie Kontakt zu Zeiner Systems auf. Wir beraten Sie gerne zu Ihrem Website-Chatbot." />
+  <meta property="og:image" content="https://dominikzeiner07-cell.github.io/zeinersystems-website.new/assets/og-image.jpg" />
+  <meta property="og:locale" content="de_AT" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -15,13 +23,14 @@
   <nav class="nav" role="navigation" aria-label="Hauptnavigation">
     <div class="container">
       <div class="nav-inner">
-        <a href="index.html" class="nav-logo"><img src="assets/logo.final.png" alt="Zeiner Systems" class="nav-logo-img" /></a>
+        <a href="index.html" class="nav-logo"><img src="assets/logo.final.png" alt="Zeiner Systems" width="601" height="120" class="nav-logo-img" /></a>
         <div class="nav-links">
           <a href="index.html">Start</a>
           <a href="leistungen.html">Leistungen</a>
           <a href="funktionsweise.html">Funktionsweise</a>
           <a href="angebote.html">Angebote</a>
           <a href="kontakt.html" class="active">Kontakt</a>
+          <a href="ueber-uns.html">Über uns</a>
         </div>
         <div class="nav-cta">
           <a href="angebote.html" class="btn btn-outline btn-sm">Pakete ansehen</a>
@@ -49,7 +58,7 @@
 
   <main>
 
-    <section style="padding: var(--sp-16) 0 var(--sp-20); background: var(--white);">
+    <section class="contact-section">
       <div class="container">
         <div class="contact-layout">
 
@@ -59,7 +68,7 @@
             <h2>Sprechen wir über Ihren Chatbot.</h2>
             <p>Stellen Sie eine Anfrage – wir melden uns in Kürze bei Ihnen und besprechen gemeinsam, was für Ihr Unternehmen passt.</p>
 
-            <div style="margin-top: var(--sp-8);">
+            <div class="mt-8">
               <a href="mailto:office@zeinersystems.at" class="contact-method">
                 <div class="contact-method-icon">✉️</div>
                 <div class="contact-method-text">
@@ -70,27 +79,24 @@
             </div>
 
             <!-- Was passiert nach der Anfrage -->
-            <div style="margin-top: var(--sp-8); padding: var(--sp-5); background: var(--off-white); border: 1px solid var(--gray-100); border-radius: var(--radius-md);">
-              <h3 style="font-size: 0.9rem; font-weight: 700; margin-bottom: var(--sp-4); color: var(--black);">Was passiert nach Ihrer Anfrage?</h3>
-              <ul style="display: flex; flex-direction: column; gap: var(--sp-3);">
-                <li style="display: flex; gap: var(--sp-3); font-size: 0.875rem; color: var(--gray-600);">
-                  <span style="width: 22px; height: 22px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 0.7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">1</span>
+            <div class="next-steps">
+              <h3>Was passiert nach Ihrer Anfrage?</h3>
+              <ul>
+                <li>
+                  <span class="step-num">1</span>
                   Wir melden uns in Kürze bei Ihnen.
                 </li>
-                <li style="display: flex; gap: var(--sp-3); font-size: 0.875rem; color: var(--gray-600);">
-                  <span style="width: 22px; height: 22px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 0.7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">2</span>
+                <li>
+                  <span class="step-num">2</span>
                   Wir stimmen gemeinsam ab, was zu Ihrem Unternehmen passt.
                 </li>
-                <li style="display: flex; gap: var(--sp-3); font-size: 0.875rem; color: var(--gray-600);">
-                  <span style="width: 22px; height: 22px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 0.7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">3</span>
+                <li>
+                  <span class="step-num">3</span>
                   Wir übernehmen die Einrichtung – Sie behalten den Überblick.
                 </li>
               </ul>
             </div>
 
-            <div style="margin-top: var(--sp-6);">
-              <p style="font-size: 0.825rem; color: var(--gray-400);">
-            </div>
           </div>
 
           <!-- Right: Form -->
@@ -100,7 +106,7 @@
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="name">Name <span class="required" style="color: var(--accent-from);">*</span></label>
+                  <label for="name">Name <span class="required">*</span></label>
                   <input type="text" id="name" name="name" class="form-input" placeholder="Max Mustermann" required autocomplete="name" />
                 </div>
                 <div class="form-group">
@@ -111,7 +117,7 @@
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="email">E-Mail <span class="required" style="color: var(--accent-from);">*</span></label>
+                  <label for="email">E-Mail <span class="required">*</span></label>
                   <input type="email" id="email" name="email" class="form-input" placeholder="max@beispiel.de" required autocomplete="email" />
                 </div>
                 <div class="form-group">
@@ -121,7 +127,7 @@
               </div>
 
               <div class="form-group">
-                <label for="website">Website-URL <span class="required" style="color: var(--accent-from);">*</span></label>
+                <label for="website">Website-URL <span class="required">*</span></label>
                 <input type="url" id="website" name="website" class="form-input" placeholder="https://ihre-website.at" required autocomplete="url" />
               </div>
 
@@ -141,10 +147,10 @@
                 <textarea id="message" name="message" class="form-textarea" placeholder="Was möchten Sie uns mitteilen? Was soll der Chatbot können?"></textarea>
               </div>
 
-              <div class="form-group" style="margin-bottom: var(--sp-6);">
+              <div class="form-group mb-6">
                 <label class="form-checkbox">
                   <input type="checkbox" name="privacy" required />
-                  <span>Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. <span style="color: var(--accent-from);">*</span></span>
+                  <span>Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. <span class="required">*</span></span>
                 </label>
               </div>
 
@@ -156,7 +162,7 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
               </button>
 
-              <p style="font-size: 0.78rem; color: var(--gray-400); text-align: center; margin-top: var(--sp-4);">
+              <p class="form-footnote">
                 Mit * markierte Felder sind Pflichtfelder.
               </p>
 
@@ -166,13 +172,13 @@
             <div class="form-success" id="formSuccess">
               <div class="form-success-icon">✅</div>
               <h3>Anfrage erhalten!</h3>
-              <p style="color: var(--gray-600); font-size: 0.95rem;">Vielen Dank – wir melden uns innerhalb eines Werktags bei Ihnen.</p>
-              <a href="index.html" class="btn btn-outline" style="margin-top: var(--sp-6);">Zurück zur Startseite</a>
+              <p>Vielen Dank – wir melden uns innerhalb eines Werktags bei Ihnen.</p>
+              <a href="index.html" class="btn btn-outline">Zurück zur Startseite</a>
             </div>
 
             <!-- Error State -->
-            <div id="formError" style="display:none; margin-top: var(--sp-4); padding: var(--sp-4); background: #fef2f2; border: 1px solid #fecaca; border-radius: var(--radius-sm);">
-              <p style="font-size: 0.875rem; color: #b91c1c; margin: 0;">Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an <a href="mailto:office@zeinersystems.at" style="color: #b91c1c; text-decoration: underline;">office@zeinersystems.at</a>.</p>
+            <div id="formError" class="form-error">
+              <p>Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an <a href="mailto:office@zeinersystems.at">office@zeinersystems.at</a>.</p>
             </div>
 
           </div>

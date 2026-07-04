@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zeiner Systems – KI-Chatbot für Ihre Website</title>
   <meta name="description" content="Zeiner Systems richtet für Ihr Unternehmen einen KI-Chatbot ein, der Kundenfragen direkt auf Ihrer Website beantwortet. Einfach, professionell, monatlich kündbar." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Open Graph / Social Preview (og:image-URL nach Domain-Umzug anpassen) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Zeiner Systems" />
+  <meta property="og:title" content="Zeiner Systems – KI-Chatbot für Ihre Website" />
+  <meta property="og:description" content="Zeiner Systems richtet für Ihr Unternehmen einen KI-Chatbot ein, der Kundenfragen direkt auf Ihrer Website beantwortet. Einfach, professionell, monatlich kündbar." />
+  <meta property="og:image" content="https://dominikzeiner07-cell.github.io/zeinersystems-website.new/assets/og-image.jpg" />
+  <meta property="og:locale" content="de_AT" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -16,14 +24,15 @@
   <nav class="nav" role="navigation" aria-label="Hauptnavigation">
     <div class="container">
       <div class="nav-inner">
-        <a href="index.html" class="nav-logo"><img src="assets/logo.final.png" alt="Zeiner Systems" class="nav-logo-img" /></a>
+        <a href="index.html" class="nav-logo"><img src="assets/logo.final.png" alt="Zeiner Systems" width="601" height="120" class="nav-logo-img" /></a>
 
-        <div class="nav-links" role="list">
-          <a href="index.html" class="active" role="listitem">Start</a>
-          <a href="leistungen.html" role="listitem">Leistungen</a>
-          <a href="funktionsweise.html" role="listitem">Funktionsweise</a>
-          <a href="angebote.html" role="listitem">Angebote</a>
-          <a href="kontakt.html" role="listitem">Kontakt</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Start</a>
+          <a href="leistungen.html">Leistungen</a>
+          <a href="funktionsweise.html">Funktionsweise</a>
+          <a href="angebote.html">Angebote</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="ueber-uns.html">Über uns</a>
         </div>
 
         <div class="nav-cta">
@@ -41,7 +50,7 @@
   </nav>
 
   <!-- ── Mobile Menu ──────────────────────────────────────── -->
-  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobilmenü">
+  <div class="mobile-menu" id="mobileMenu">
     <a href="index.html">Start</a>
     <a href="leistungen.html">Leistungen & Ablauf</a>
     <a href="funktionsweise.html">Funktionsweise</a>
@@ -103,7 +112,10 @@
           <div class="hero-visual" aria-hidden="true">
             <div class="hero-video-wrap">
               <video
-                src="assets/animation-prototyp.MOV"
+                src="assets/animation-prototyp.mp4"
+                poster="assets/animation-poster.jpg"
+                width="720"
+                height="960"
                 autoplay
                 loop
                 muted
@@ -135,7 +147,7 @@
           <!-- Card 1: Ihre Inhalte -->
           <div class="highlight-card">
             <div class="highlight-visual" aria-hidden="true">
-              <img src="assets/card1HP.png" alt="" class="highlight-card-img" />
+              <img src="assets/card1HP.jpg" alt="" width="800" height="533" loading="lazy" class="highlight-card-img" />
             </div>
             <div class="highlight-body">
               <h3>Basiert auf Ihren Inhalten</h3>
@@ -146,7 +158,7 @@
           <!-- Card 2: Kein Risiko -->
           <div class="highlight-card">
             <div class="highlight-visual" aria-hidden="true">
-              <img src="assets/card2HP.png" alt="" class="highlight-card-img" />
+              <img src="assets/card2HP.jpg" alt="" width="800" height="533" loading="lazy" class="highlight-card-img" />
             </div>
             <div class="highlight-body">
               <h3>Kein Risiko, kein langer Vertrag</h3>
@@ -157,7 +169,7 @@
           <!-- Card 3: Sicherheit -->
           <div class="highlight-card">
             <div class="highlight-visual" aria-hidden="true">
-              <img src="assets/card3HP.png" alt="" class="highlight-card-img" />
+              <img src="assets/card3HP.jpg" alt="" width="800" height="533" loading="lazy" class="highlight-card-img" />
             </div>
             <div class="highlight-body">
               <h3>Sicherheit ernst genommen</h3>
@@ -229,9 +241,9 @@
         <div class="ps-split">
 
           <!-- Left: Steps -->
-          <div class="ps-steps" role="list">
+          <div class="ps-steps">
 
-            <button class="ps-step active" data-step="1" role="listitem" aria-pressed="true">
+            <button class="ps-step active" data-step="1" aria-pressed="true">
               <span class="ps-num">01</span>
               <div class="ps-step-body">
                 <span class="ps-step-title">Demo anfordern</span>
@@ -239,7 +251,7 @@
               </div>
             </button>
 
-            <button class="ps-step" data-step="2" role="listitem" aria-pressed="false">
+            <button class="ps-step" data-step="2" aria-pressed="false">
               <span class="ps-num">02</span>
               <div class="ps-step-body">
                 <span class="ps-step-title">Inhalte ergänzen</span>
@@ -247,7 +259,7 @@
               </div>
             </button>
 
-            <button class="ps-step" data-step="3" role="listitem" aria-pressed="false">
+            <button class="ps-step" data-step="3" aria-pressed="false">
               <span class="ps-num">03</span>
               <div class="ps-step-body">
                 <span class="ps-step-title">Widget einbinden</span>
@@ -255,7 +267,7 @@
               </div>
             </button>
 
-            <button class="ps-step" data-step="4" role="listitem" aria-pressed="false">
+            <button class="ps-step" data-step="4" aria-pressed="false">
               <span class="ps-num">04</span>
               <div class="ps-step-body">
                 <span class="ps-step-title">Live & weiter optimieren</span>
@@ -269,16 +281,16 @@
           <div class="ps-visual-panel" aria-hidden="true">
 
             <div class="ps-visual active" data-visual="1">
-              <img src="assets/schritt1.png" alt="Demo anfordern" class="ps-visual-img" />
+              <img src="assets/schritt1.jpg" alt="Demo anfordern" width="1100" height="619" loading="lazy" class="ps-visual-img" />
             </div>
             <div class="ps-visual" data-visual="2">
-              <img src="assets/schritt2.png" alt="Inhalte ergänzen" class="ps-visual-img" />
+              <img src="assets/schritt2.jpg" alt="Inhalte ergänzen" width="1100" height="619" loading="lazy" class="ps-visual-img" />
             </div>
             <div class="ps-visual" data-visual="3">
-              <img src="assets/schritt3.png" alt="Widget einbinden" class="ps-visual-img" />
+              <img src="assets/schritt3.jpg" alt="Widget einbinden" width="1100" height="619" loading="lazy" class="ps-visual-img" />
             </div>
             <div class="ps-visual" data-visual="4">
-              <img src="assets/schritt4.png" alt="Live & weiter optimieren" class="ps-visual-img" />
+              <img src="assets/schritt4.jpg" alt="Live & weiter optimieren" width="1100" height="619" loading="lazy" class="ps-visual-img" />
             </div>
 
           </div>
@@ -292,7 +304,7 @@
     </section>
 
     <!-- Gradient transition: white → off-white -->
-    <div style="height: 80px; background: linear-gradient(to bottom, var(--white), var(--off-white)); margin-top: -1px;"></div>
+    <div class="section-fade"></div>
 
     <!-- ── Pricing Preview ───────────────────────────────── -->
     <section class="pricing-preview">
@@ -339,7 +351,7 @@
           </div>
 
           <!-- Pro -->
-          <div class="pricing-card featured" style="position:relative;">
+          <div class="pricing-card featured">
             <div class="pricing-card-badge">Empfohlen</div>
             <div class="pricing-card-name">Pro</div>
             <div class="pricing-card-price">49 €<span> / Monat</span></div>

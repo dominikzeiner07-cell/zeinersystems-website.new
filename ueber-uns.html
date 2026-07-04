@@ -5,64 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Über uns – Zeiner Systems</title>
   <meta name="description" content="Zeiner Systems wurde von Dominik Zeiner gegründet – 18 Jahre alt, aus Mistelbach, NÖ. Erfahren Sie mehr über die Idee hinter dem Unternehmen." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Open Graph / Social Preview (og:image-URL nach Domain-Umzug anpassen) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Zeiner Systems" />
+  <meta property="og:title" content="Über uns – Zeiner Systems" />
+  <meta property="og:description" content="Zeiner Systems wurde von Dominik Zeiner gegründet – 18 Jahre alt, aus Mistelbach, NÖ. Erfahren Sie mehr über die Idee hinter dem Unternehmen." />
+  <meta property="og:image" content="https://dominikzeiner07-cell.github.io/zeinersystems-website.new/assets/og-image.jpg" />
+  <meta property="og:locale" content="de_AT" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* Über uns – Layout (mobile-first) */
-    .about-top {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--sp-8);
-      align-items: center;
-      margin-bottom: var(--sp-12);
-    }
-    .about-photo {
-      order: -1;
-      max-width: 260px;
-      margin: 0 auto;
-    }
-    .about-photo img {
-      width: 100%;
-      border-radius: var(--radius-lg);
-      display: block;
-    }
-    .about-blocks {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--sp-5);
-    }
-    @media (min-width: 768px) {
-      .about-top {
-        grid-template-columns: 1fr 300px;
-        gap: var(--sp-16);
-        margin-bottom: var(--sp-16);
-      }
-      .about-photo {
-        order: 0;
-        max-width: none;
-        margin: 0;
-      }
-      .about-blocks {
-        grid-template-columns: 1fr 1fr;
-        gap: var(--sp-8);
-      }
-    }
-  </style>
 </head>
 <body>
 
   <nav class="nav" role="navigation" aria-label="Hauptnavigation">
     <div class="container">
       <div class="nav-inner">
-        <a href="index.html" class="nav-logo"><img src="assets/logo.final.png" alt="Zeiner Systems" class="nav-logo-img" /></a>
+        <a href="index.html" class="nav-logo"><img src="assets/logo.final.png" alt="Zeiner Systems" width="601" height="120" class="nav-logo-img" /></a>
         <div class="nav-links">
           <a href="index.html">Start</a>
           <a href="leistungen.html">Leistungen</a>
           <a href="funktionsweise.html">Funktionsweise</a>
           <a href="angebote.html">Angebote</a>
           <a href="kontakt.html">Kontakt</a>
+          <a href="ueber-uns.html" class="active">Über uns</a>
         </div>
         <div class="nav-cta">
           <a href="angebote.html" class="btn btn-outline btn-sm">Pakete ansehen</a>
@@ -98,41 +66,41 @@
       </div>
     </section>
 
-    <section style="background: var(--white);">
+    <section class="bg-white">
       <div class="container">
 
         <!-- Top: Text links, Foto rechts -->
         <div class="about-top">
-          <div>
-            <div class="section-label" style="margin-bottom: var(--sp-4);">Gründer</div>
-            <h2 style="margin-bottom: var(--sp-5);">Dominik Zeiner</h2>
-            <p style="font-size: 1.0625rem; line-height: 1.75; color: var(--gray-600); margin-bottom: var(--sp-4);">
+          <div class="about-text">
+            <div class="section-label">Gründer</div>
+            <h2>Dominik Zeiner</h2>
+            <p>
               Ich bin 18 Jahre alt und komme aus Mistelbach in Niederösterreich. Technik und Systeme haben mich schon immer fasziniert – nicht als Hobby, sondern als echtes Interesse daran, wie Dinge funktionieren und wie man sie besser machen kann.
             </p>
-            <p style="font-size: 1.0625rem; line-height: 1.75; color: var(--gray-600);">
+            <p>
               Zeiner Systems habe ich 2026 gegründet – nach rund einem Jahr, in dem ich die Idee entwickelt und ausgearbeitet habe.
             </p>
           </div>
           <div class="about-photo">
-            <img src="assets/dominik.png" alt="Dominik Zeiner" />
+            <img src="assets/dominik.jpg" alt="Dominik Zeiner" width="599" height="600" loading="lazy" />
           </div>
         </div>
 
         <!-- Unten: Zwei Blöcke nebeneinander -->
         <div class="about-blocks">
 
-          <div style="background: var(--off-white); border-radius: var(--radius-lg); padding: var(--sp-8);">
-            <div class="section-label" style="margin-bottom: var(--sp-4);">Die Idee</div>
-            <h3 style="font-size: 1.125rem; margin-bottom: var(--sp-4);">Wie es dazu kam</h3>
-            <p style="font-size: 0.9375rem; line-height: 1.75; color: var(--gray-600);">
+          <div class="about-block">
+            <div class="section-label">Die Idee</div>
+            <h3>Wie es dazu kam</h3>
+            <p>
               Ich habe gesehen, wie viel Potenzial in einem KI-gestützten System steckt – besonders für Unternehmen, die keine riesige IT-Abteilung haben. Die Technologie dafür ist vorhanden, der Zugang dazu oft nicht. Genau das wollte ich ändern.
             </p>
           </div>
 
-          <div style="background: var(--off-white); border-radius: var(--radius-lg); padding: var(--sp-8);">
-            <div class="section-label" style="margin-bottom: var(--sp-4);">Die Motivation</div>
-            <h3 style="font-size: 1.125rem; margin-bottom: var(--sp-4);">Warum Chatbots?</h3>
-            <p style="font-size: 0.9375rem; line-height: 1.75; color: var(--gray-600);">
+          <div class="about-block">
+            <div class="section-label">Die Motivation</div>
+            <h3>Warum Chatbots?</h3>
+            <p>
               Ein Besucher landet auf einer Website und hat eine konkrete Frage – eine, die von seinem spezifischen Anliegen abhängt. Ein gut eingerichteter Chatbot kann genau das abbilden: er kennt das Unternehmen, versteht den Kontext und gibt eine Antwort, die tatsächlich weiterhilft.
             </p>
           </div>
@@ -140,7 +108,7 @@
         </div>
 
         <!-- CTA -->
-        <div style="margin-top: var(--sp-12); display: flex; gap: var(--sp-3); flex-wrap: wrap;">
+        <div class="about-cta">
           <a href="kontakt.html" class="btn btn-primary">Nachricht schreiben</a>
           <a href="angebote.html" class="btn btn-outline">Pakete ansehen</a>
         </div>
